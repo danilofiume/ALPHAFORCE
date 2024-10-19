@@ -320,7 +320,7 @@ font-weight:bold;
 /* Scroll Arrow */
 .scroll-arrow {
     position: absolute; /* Posizione assoluta */
-    bottom: 20px; /* Fissa la freccia in basso */
+    bottom: 80px; /* Fissa la freccia in basso */
     left: 50%; /* Centra orizzontalmente */
     transform: translateX(-50%); /* Correggi il centro */
     font-size: 24px;
