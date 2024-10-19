@@ -527,3 +527,12 @@ font-weight:bold;
 .scroll-to-top:hover {
  color: black;
 }
+
+
+@supports (-webkit-touch-callout: none) {
+    img {
+      object-fit: contain;
+      width: 100%; /* o un'altra dimensione adeguata */
+    }
+  }
+  
