@@ -341,7 +341,7 @@ font-weight:bold;
 @media (max-width: 768px) {
     
     .service h1 {
-        font-size: 3.2rem;
+        font-size: 3rem;
         font-weight: 700;
         margin-bottom: 10px;
     }
@@ -357,6 +357,31 @@ font-weight:bold;
     .citazione{
         font-size: 1.5em;
     }
+
+    /* Servizio 1 */
+#service1 {
+    background-image: url('img/immagineprova3mobile.jpg');
+}
+
+/* Servizio 2 */
+#service2 {
+    background-image: url('img/immagineprova4mobile.jpg');
+}
+
+/* Servizio 3 */
+#service3 {
+    background-image: url('img/immagineprova1mobile.jpeg');
+}
+
+/* Servizio 4 */
+#service4 {
+    background-image: url('img/immagineprova2mobile.jpeg');
+}
+
+#citazione{
+    background-image: url('img/immaginecitazionemobile.jpg');
+
+}
 }
 
 
@@ -391,6 +416,7 @@ font-weight:bold;
 .servicepage h1{
     font-size: 4rem;
     font-weight: 700;
+    margin-top: 0.8em;
     margin-bottom: 0.5em;
 }
 
