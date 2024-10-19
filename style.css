@@ -350,9 +350,12 @@ font-weight:bold;
     .menu img {
         width: 25px;
     }
+    .menu p{
+        font-size: 10px;
+    }
 
     .logo img {
-        width: 250px;
+        width: 220px;
     }
     .citazione{
         font-size: 1.5em;
@@ -529,10 +532,3 @@ font-weight:bold;
 }
 
 
-@supports (-webkit-touch-callout: none) {
-    img {
-      object-fit: contain;
-      width: 100%; /* o un'altra dimensione adeguata */
-    }
-  }
-  
