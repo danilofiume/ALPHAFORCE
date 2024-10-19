@@ -320,8 +320,9 @@ font-weight:bold;
 /* Scroll Arrow */
 .scroll-arrow {
     position: absolute; /* Posizione assoluta */
-    bottom: 80px; /* Fissa la freccia in basso */
+    bottom: 20px; /* Fissa la freccia in basso */
     left: 50%; /* Centra orizzontalmente */
+    padding-bottom: 80px;
     transform: translateX(-50%); /* Correggi il centro */
     font-size: 24px;
     color: #fff;
@@ -331,7 +332,7 @@ font-weight:bold;
 
 /* Effetto Hover sulla freccia */
 .scroll-arrow:hover {
-    bottom: 18px; /* Cambia colore al passaggio del mouse */
+    /* bottom: 18px; Cambia colore al passaggio del mouse */
     color: white;
 }
 
@@ -475,13 +476,16 @@ font-weight:bold;
     transition: 1s;
 } */
 
+#menu p{
+    cursor: pointer;
+}
 
 
 
 .scroll-to-top {
     position: fixed;
-    bottom: 5px;
-    right: 5px;
+    bottom: 30px;
+    right: 30px;
     display: none;
     width: 40px;
     height: 40px;
