@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    opacity: 0; /* Inizialmente invisibile */
+    transition: opacity 0.5s ease; /* Tempo di transizione per l'opacità */
+}
+
+body.visible {
+    opacity: 1; /* Mostra il body */
+}
+
+
+/* Stili della scrollbar per Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 4px; 
+    background-color: #ffffff; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000; 
+    /* border-radius: 10px;  */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4a4a4a; 
+}
+
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 650;
+    font-style: normal;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent; /* Trasparente */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 8000;
+    color: white;
+    transition: 0.5s;
+}
+
+header button {
+    background: none;
+    border: none;
+    color: inherit; /* Mantiene il colore del testo */
+    padding: 0;
+    font: inherit; /* Mantiene lo stesso font */
+    cursor: pointer; /* Mantiene il cursore come "pointer" */
+}
+
+/* Rimuovi il sottolineato dai link */
+a {
+    text-decoration: none !important; /* Rimuove il sottolineato di default */
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Inizialmente nascosta */
+    height: 100vh;
+    width: 30%; /* Occupiamo il 100% su mobile */
+    background-color: #000000; /* Colore di sfondo */
+    transition: left 0.3s ease; /* Animazione */
+    z-index: 1005; /* Assicura che sia sopra altri elementi */
+    padding: 100px 20px;
+    font-size: 1.2em;
+    overflow-y: auto;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.8em;
+}
+
+.sidebar ul li {
+    transition: border-left 0.1s ease; /* Transizione per il bordo */
+}
+
+.sidebar ul li a {
+    color: white;
+}
+
+.sidebar ul li:hover {
+    border-left: 3px solid white; /* Bordo sinistro di 2px bianco */
+    padding-left: 15px; /* Riduci lo spazio a sinistra quando si passa sopra */
+}
+
+/* Visibile su schermi più grandi */
+@media (max-width: 991px) {
+    .sidebar {
+        width: 100%; /* Occupiamo il 30% su schermi più grandi */
+        font-size: 1em;
+    }
+}
+
+/* Classe per mostrare la sidebar */
+.sidebar.show {
+    left: 0; /* Mostra la sidebar */
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.menu img {
+    width: 35px;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.whatsapp_float {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 1003;
+}
+
+.whatsapp_icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent; 
+    padding: 10px; /* Spazio interno per creare l'effetto cerchio */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+.whatsapp_icon:hover {
+    transform: scale(1.1); /* Ingrandisce l'icona del 20% al passaggio del mouse */
+}
+
+
+
+button {
+    background: none; /* Rimuovi lo sfondo */
+    border: none; /* Rimuovi i bordi */
+    font-weight: normal; /* Font normale di default */
+    cursor: pointer; /* Cambia il cursore al passaggio */
+    outline: none; /* Rimuovi il contorno (quadrato) quando il pulsante è in focus */
+    padding: 10px; /* Spaziatura attorno al testo */
+}
+
+#btn-en,#btn-it:focus {
+    outline: none; /* Rimuovi l'effetto focus */
+}
+
+.selected-language {
+    font-weight: bold; /* Grassetto solo per la lingua selezionata */
+}
+
+footer{
+    padding: 1em;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#btn-en, #btn-it {
+    padding-top: 4px;
+}
+
+.service {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* EFFETTO PARALLAX */
+    position: relative;
+    color: white;
+    font-size: 45px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+/* Centralizza il contenuto */
+.service .content {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Centra orizzontalmente */
+    justify-content: center; /* Centra verticalmente */
+    width: 100%;
+    max-width: 1200px;
+}
+
+.service .content a {
+    margin-top: 0;
+}
+
+/* Titolo */
+.service h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/* Piccolo link sotto il titolo */
+.service a p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.service p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    
+}
+.service a p:hover {
+font-weight:bold;    
+}
+
+/* Servizio 1 */
+#service1 {
+    background-image: url('img/immagineprova3.jpg');
+}
+
+/* Servizio 2 */
+#service2 {
+    background-image: url('img/immagineprova4.jpg');
+}
+
+/* Servizio 3 */
+#service3 {
+    background-image: url('img/immagineprova1.jpeg');
+}
+
+/* Servizio 4 */
+#service4 {
+    background-image: url('img/immagineprova2.jpeg');
+}
+
+#citazione{
+    background-image: url('img/immaginecitazione.jpg');
+
+}
+
+/* Citazione */
+.citazione {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* EFFETTO PARALLAX */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    background-attachment: fixed; /* EFFETTO PARALLAX */
+    position: relative;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0 20px;
+    font-style: italic;
+}
+.citazione .content {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Centra orizzontalmente */
+    justify-content: center; /* Centra verticalmente */
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+/* Scroll Arrow */
+.scroll-arrow {
+    position: absolute; /* Posizione assoluta */
+    bottom: 20px; /* Fissa la freccia in basso */
+    left: 50%; /* Centra orizzontalmente */
+    transform: translateX(-50%); /* Correggi il centro */
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Effetto di transizione */
+}
+
+/* Effetto Hover sulla freccia */
+.scroll-arrow:hover {
+    bottom: 18px; /* Cambia colore al passaggio del mouse */
+    color: white;
+}
+
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+    
+    .service h1 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    
+    .menu img {
+        width: 25px;
+    }
+
+    .logo img {
+        width: 250px;
+    }
+    .citazione{
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+
+.servicepage {
+    display: flex;
+    justify-content: center; /* Allinea il contenuto all'inizio */
+    align-items: center; /* Mantiene il contenuto centrato verticalmente */
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Effetto parallax */
+    position: relative;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding: 80px  20px; /* Sposta il contenuto verso il basso */
+    min-height: 100vh; /* Assicurati che sia almeno alta come la finestra */
+}
+.servicepage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    background-color: rgba(0, 0, 0, 0.8); /* Cambia il valore di opacità qui */
+    z-index: 1; /* Assicurati che l'overlay sia sopra lo sfondo */
+}
+.servicepage h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+/* Contenuto della sezione */
+.servicepage .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Allinea il testo a sinistra */
+    justify-content: flex-start; /* Inizia a riempire dallo spazio disponibile */
+    width: 100%;
+    z-index: 1000;
+    max-width: 1200px; /* Limita la larghezza massima */
+}
+
+.servicepage .content p {
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+   
+}
+
+.pwidth{
+    width: 95%;
+}
+
+
+
+/* Ridimensiona il titolo su dispositivi mobili */
+@media (max-width: 768px) {
+    .servicepage h1 {
+        font-size: 2rem; /* Dimensione titolo mobile */
+        margin-bottom: 10px; /* Margine sotto il titolo */
+    }
+}
+
+/* @media (min-width: 1232px) {
+   .dnonebr{
+    display: none;
+   }
+} */
+
+
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Sfondo nero semi-trasparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Assicurati che sia sopra altri elementi */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.loader img {
+    width: 65px; /* Modifica la dimensione dell'immagine secondo necessità */
+    animation: spin 1s linear infinite; /* Rotazione infinita */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.last-dance {
+    border-top: 2px solid white;
+    padding-top:50px;
+    text-align: center;
+}
+
+.scrolled {
+    background-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    /* background-color: #000000; */
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.scroll-to-top:hover {
+ color: black;
+}
