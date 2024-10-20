@@ -244,6 +244,8 @@ footer {
   .servicepage{
     background-attachment: scroll;
   }
+
+  
 }
 
 /* Centralizza il contenuto */
@@ -307,23 +309,24 @@ footer {
   background-image: url("img/immaginecitazione.jpg");
 }
 
+
+
 /* Citazione */
 .citazione {
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* EFFETTO PARALLAX */
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: black;
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed; /* EFFETTO PARALLAX */
   position: relative;
   color: white;
   font-size: 1.5em;
-  text-align: center;
+  text-align: left;
   padding: 0 20px;
+  text-align: center;
   font-style: italic;
 }
 .citazione .content {
@@ -373,7 +376,7 @@ footer {
     width: 220px;
   }
   .citazione {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   /* Servizio 1 */
@@ -479,7 +482,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Assicurati che sia sopra altri elementi */
+  z-index: 1000; /* Assicurati che sia sopra altri elementi */
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
