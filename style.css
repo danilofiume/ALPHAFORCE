@@ -218,7 +218,7 @@ footer {
 }
 
 .service {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,6 +272,7 @@ footer {
 /* Servizio 1 */
 #service1 {
   background-image: url("img/immagineprova3.jpg");
+
 }
 
 /* Servizio 2 */
