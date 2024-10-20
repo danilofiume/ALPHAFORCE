@@ -267,6 +267,9 @@ footer {
 /* Servizio 1 */
 #service1 {
   background-image: url("img/immagineprova3.jpg");
+   background-attachment: fixed;
+     background-size: cover;
+  background-position: center;
 }
 
 /* Servizio 2 */
@@ -361,7 +364,9 @@ footer {
   #service1 {
     background-image: url("img/immagineprova3mobile.jpg");
     background-attachment: fixed;
-    -webkit-background-size:cover;
+     background-size: cover;
+  background-position: center;
+    
   }
 
   /* Servizio 2 */
