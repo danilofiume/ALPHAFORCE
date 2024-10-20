@@ -218,8 +218,8 @@ footer {
 }
 
 .service {
-  height: 100vh;
-  display: flex;
+min-height: 100%;  
+display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -272,9 +272,6 @@ footer {
 /* Servizio 1 */
 #service1 {
   background-image: url("img/immagineprova3.jpg");
-   background-attachment: fixed;
-     background-size: cover;
-  background-position: center;
 }
 
 /* Servizio 2 */
@@ -301,7 +298,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* EFFETTO PARALLAX */
-  height: 100vh;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -407,7 +404,7 @@ footer {
   font-size: 20px;
   text-align: left;
   padding: 80px 20px; /* Sposta il contenuto verso il basso */
-  min-height: 100vh; /* Assicurati che sia almeno alta come la finestra */
+  min-height: 100%; /* Assicurati che sia almeno alta come la finestra */
 }
 .servicepage::before {
   content: "";
