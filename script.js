@@ -22,7 +22,7 @@ const translations = {
 
 
 
-    textbespokeclient:"Security is a personal need and every client has unique needs that require a tailored approach. Our Bespoke Client Management service is designed to offer customized solutions that perfectly fit the client's lifestyle, preferences and level of exposure.",
+    textbespokeclient:"Security is a personal need and every client has unique needs that require a tailored approach. We offer customized solutions that are perfectly suited to the client's lifestyle, preferences and exposure level.",
     textbespokeclient1:"We understand that in certain circumstances, our clients may want to clearly show those around them that they are fully protected. In these situations, we can provide uniformed bodyguards, who ensure a visible and reassuring presence. Other times, however, discretion is essential to maintain a low profile and move without attracting unwanted attention. For these occasions, we offer protection services in plain clothes, where our officers blend seamlessly into the surrounding environment, always maintaining high safety standards without being invasive.",
     textbespokeclient2:"Our personalized protection services include:",
     textbespokeclient3t:"CUSTOMER NEEDS ANALYSIS",
@@ -97,7 +97,7 @@ const translations = {
 
 
 
-    textbespokeclient:"La sicurezza è un'esigenza personale e ogni cliente ha bisogni unici che richiedono un approccio su misura. Il nostro servizio di Bespoke Client Management è progettato per offrire soluzioni personalizzate che si adattano perfettamente allo stile di vita, alle preferenze e al livello di esposizione del cliente.",
+    textbespokeclient:"La sicurezza è un'esigenza personale e ogni cliente ha bisogni unici che richiedono un approccio su misura. Offriamo soluzioni personalizzate che si adattano perfettamente allo stile di vita, alle preferenze e al livello di esposizione del cliente.",
     textbespokeclient1:"Siamo consapevoli che in determinate circostanze, i nostri clienti potrebbero voler mostrare chiaramente a chi sta loro intorno di essere completamente protetti. In queste situazioni, possiamo fornire bodyguard in uniforme, che garantiscono una presenza visibile e rassicurante. Altre volte, invece, la discrezione è essenziale per mantenere un profilo basso e muoversi senza attirare attenzione indesiderata. Per queste occasioni, offriamo servizi di protezione in abiti civili, dove i nostri agenti si integrano perfettamente nell'ambiente circostante, mantenendo sempre elevati standard di sicurezza senza risultare invasivi.",
     textbespokeclient2:"I nostri servizi di protezione personalizzata includono:",
     textbespokeclient3t:"ANALISI DELLE ESIGENZE DEL CLIENTE", 
