@@ -362,7 +362,7 @@ footer {
 
   /* Servizio 1 */
   #service1 {
-    background-image: url("img/immagineprova3mobile.jpg");
+    background-image: url("/img/immagineprova3mobile.jpg");
     background-attachment: fixed;
      background-size: cover;
   background-position: center;
