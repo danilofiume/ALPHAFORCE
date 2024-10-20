@@ -238,6 +238,12 @@ footer {
   .service {
     background-attachment: scroll;
   }
+  .citazione {
+    background-attachment: scroll;
+  }
+  .servicepage{
+    background-attachment: scroll;
+  }
 }
 
 /* Centralizza il contenuto */
@@ -306,7 +312,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* EFFETTO PARALLAX */
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
