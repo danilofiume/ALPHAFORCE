@@ -204,6 +204,7 @@ button {
 
 footer {
   padding: 1em;
+  font-size: 0.8em;
   display: flex;
   background-color: black;
   color: white;
@@ -545,11 +546,12 @@ footer {
 
 .custom-footer{
   position: relative;
+  font-size: 0.8em;
 }
 
 .divfootercustom{
   position: absolute;
-  bottom: 32px;
+  bottom: 25px;
   right: 15px;
   width: 30px ;
 }
