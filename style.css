@@ -233,6 +233,13 @@ footer {
   padding: 0 20px;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  /* Disabilita l'effetto parallax su dispositivi iOS */
+  .service {
+    background-attachment: scroll;
+  }
+}
+
 /* Centralizza il contenuto */
 .service .content {
   display: flex;
