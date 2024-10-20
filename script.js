@@ -37,9 +37,9 @@ const translations = {
 
 
     
-    textcars:"Our fleet of luxury vehicles is available to ensure safe and comfortable transfers, both for personal and professional travel. We offer dedicated transportation solutions for VIP clients, executives, celebrities and individuals who require a high level of protection, combining security and discretion.",
+    textcars:"Our fleet of vehicles is available to ensure safe and comfortable transfers, both for personal and professional travel. We offer dedicated transportation solutions for VIP clients, executives, celebrities and individuals who require a high level of protection, combining security and discretion.",
     textcars1:"Our car services include: ",
-    textcars2t:"FLEET OF ARMORED AND LUXURY VEHICLES",
+    textcars2t:"FLEET OF LUXURY AND ARMOURED VEHICLES",
     textcars2:"We have state-of-the-art vehicles, designed to offer maximum security and comfort, with armored options for extra protection in high-risk situations.",
     textcars3t:"PROFESSIONAL AND QUALIFIED DRIVERS",
     textcars3:"Our drivers are highly trained and have extensive experience in defensive driving and evasion techniques, ensuring safe and discreet transfers in any situation.",
@@ -112,9 +112,9 @@ const translations = {
 
 
     
-    textcars:"La nostra flotta di veicoli di lusso è a disposizione per garantire trasferimenti sicuri e confortevoli, sia per viaggi personali che professionali. Offriamo soluzioni di trasporto dedicate a clienti VIP, dirigenti, celebrità e individui che necessitano di un alto livello di protezione, abbinando sicurezza e discrezione.",
+    textcars:"La nostra flotta di veicoli è a disposizione per garantire trasferimenti sicuri e confortevoli, sia per viaggi personali che professionali. Offriamo soluzioni di trasporto dedicate a clienti VIP, dirigenti, celebrità e individui che necessitano di un alto livello di protezione, abbinando sicurezza e discrezione.",
     textcars1:"I nostri servizi cars includono: ",
-    textcars2t:"FLOTTA DI VEICOLI BLINDATI E DI LUSSO",
+    textcars2t:"FLOTTA DI VEICOLI DI LUSSO E BLINDATI",
     textcars2:"Disponiamo di veicoli all'avanguardia, progettati per offrire il massimo della sicurezza e del comfort, con opzioni blindate per una protezione extra in situazioni a rischio elevato.",
     textcars3t:"AUTISTI PROFESSIONALI E QUALIFICATI",
     textcars3:"I nostri autisti sono altamente addestrati e possiedono una vasta esperienza nella guida difensiva e nelle tecniche di evasione, garantendo trasferimenti sicuri e discreti in qualsiasi situazione.",
@@ -257,17 +257,17 @@ window.addEventListener('scroll', () => {
 
 
 
-const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+// const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
-window.onscroll = function() {
-    if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
-        scrollToTopBtn.style.display = "block";
-    } else {
-        scrollToTopBtn.style.display = "none";
-    }
-};
+// window.onscroll = function() {
+//     if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+//         scrollToTopBtn.style.display = "block";
+//     } else {
+//         scrollToTopBtn.style.display = "none";
+//     }
+// };
 
-scrollToTopBtn.onclick = function(event) {
-    event.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-};
+// scrollToTopBtn.onclick = function(event) {
+//     event.preventDefault();
+//     window.scrollTo({ top: 0, behavior: 'smooth' });
+// };
