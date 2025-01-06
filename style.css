@@ -164,10 +164,27 @@ a {
 }
 
 .whatsapp_float {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
   position: fixed;
-  bottom: 5px;
-  right: 5px;
+  bottom: 15px;
+  right: 15px;
   z-index: 1003;
+}
+
+.whatsapp_float2 {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  position: fixed;
+  bottom: 15px;
+  right: 55px;
+  z-index: 1003;
+}
+
+.whatsapp_float:hover, .whatsapp_float2:hover{
+  color: white;
 }
 
 .whatsapp_icon {
@@ -287,23 +304,23 @@ footer {
 
 /* Servizio 1 */
 #service1 {
-  background-image: url("img/immagineprova3.jpg");
+  background-image: url("img/closeimg.jpg");
 
 }
 
 /* Servizio 2 */
 #service2 {
-  background-image: url("img/immagineprova4.jpg");
+  background-image: url("img/bespokeimg.jpg");
 }
 
 /* Servizio 3 */
 #service3 {
-  background-image: url("img/immagineprova1.jpeg");
+  background-image: url("img/vanmerceds1.jpg");
 }
 
 /* Servizio 4 */
 #service4 {
-  background-image: url("img/immagineprova2.jpeg");
+  background-image: url("img/trainingimg.jpg");
 }
 
 #service5 {
@@ -385,29 +402,34 @@ footer {
 
   /* Servizio 1 */
   #service1 {
-    background-image: url("/img/immagineprova3mobile.jpg");
+    background-image: url("/img/closeimgmobile.JPG");
    
     
   }
 
   /* Servizio 2 */
   #service2 {
-    background-image: url("img/immagineprova4mobile.jpg");
+    background-image: url("img/imgbespokemobile.jpg");
   }
 
   /* Servizio 3 */
   #service3 {
-    background-image: url("img/immagineprova1mobile.jpeg");
+    background-image: url("img/vanmercedsobile1.jpg");
   }
 
   /* Servizio 4 */
   #service4 {
-    background-image: url("img/immagineprova2mobile.jpeg");
+    background-image: url("img/imgtrainingmobile.jpg");
   }
 
   #service5 {
     background-image: url("img/immaginecitazionemobile.jpg");
   }
+
+  #work_with_us{
+    background-image: url("img/immaginecitazionemobile.jpg");
+  }
+  
 }
 
 .servicepage {
@@ -519,6 +541,7 @@ footer {
 
 
 
+
 #menu p {
   cursor: pointer;
 }
@@ -544,14 +567,158 @@ footer {
 }
 
 
-.custom-footer{
+.custom-footer {
   position: relative;
   font-size: 0.8em;
+  text-align: center;
+  padding: 20px;
 }
 
-.divfootercustom{
+.divfootercustom {
   position: absolute;
-  bottom: 25px;
-  right: 15px;
-  width: 30px ;
+  display: flex;
+  gap: 10px;
+  /* margin-top: 5em; */
+}
+
+.divfootercustom a {
+  
+  font-size: 2.5em;
+  color: white;
+}
+.divfootercustom a:hover {
+  
+ transform: scale(1.1);
+  color: white;
+}
+
+.email, .powered-by {
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout per schermi più grandi di 768px */
+@media (min-width: 768px) {
+  .custom-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .divfootercustom {
+      bottom: 17px;
+      right: 15px;
+  }
+
+  .email, .powered-by {
+      text-align: center;
+  }
+}
+
+/* Layout per schermi più piccoli di 768px */
+@media (max-width: 768px) {
+  .custom-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+  }
+
+  .divfootercustom {
+      position: absolute;
+      bottom: 17px;
+      right: 15px;
+      flex-direction: row;
+  }
+
+  .email, .powered-by {
+      text-align: left;
+  }
+}
+
+#work_with_us{
+  background-image: url("img/immaginecitazione.jpg");
+  
+}
+
+#work_with_us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  background-color: rgba(0, 0, 0, 0.8); /* Cambia il valore di opacità qui */
+  z-index: 1; /* Assicurati che l'overlay sia sopra lo sfondo */
+}
+
+#work_with_us .cssforworkwithuus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  z-index: 1000;
+}
+
+#work_with_us .content{
+ 
+
+  z-index: 1000;
+}
+
+
+
+@media (max-width: 993px) {
+  #work_with_us h1 {
+    font-size: 1.5rem; /* Dimensione titolo mobile */
+    margin-bottom: 10px; /* Margine sotto il titolo */
+  }
+
+
+  #work_with_us .cssforworkwithuus{
+    
+    flex-direction: column;
+  
+    
+  }
+  
+
+
+  
+}
+
+
+#carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Altezza personalizzabile */
+}
+
+#carousel img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#prev-btn {
+  left: 10px;
+}
+
+#next-btn {
+  right: 10px;
 }

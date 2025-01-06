@@ -5,7 +5,7 @@ const translations = {
     citazione: "\"We operate with professionalism and discretion throughout the Italian territory, offering highly qualified Close Protection services. Thanks to our international experience, we are available for assignments in Europe and the World, always guaranteeing the highest level of security wherever we are required.\"",
     
     
-    textcloseprotection:"We offer personalized close protection services, designed to ensure the safety and peace of mind of our clients in every situation. Our team, composed of highly trained and discreet professionals, provides protection to prominent personalities, VIPs, executives and individuals with high security needs, both in private and at public events.",
+    textcloseprotection:"We offer safe and reliable transfer services, with highly qualified drivers. We aim to ensure safety and privacy for our customers. Our team, composed of professionals, provides protection to celebrities, executives and people with high security needs, both in private and during public events.",
     textcloseprotection1:"Our services include:",
     textcloseprotection2t:"CUSTOMIZED RISK ANALYSIS",
     textcloseprotection2:"We carefully evaluate the circumstances and potential dangers to offer tailor-made solutions.",
@@ -57,8 +57,8 @@ const translations = {
 
 
 
-    text_training:"My experience in Close Protection is supported by high-level professional training, acquired through qualified and internationally recognized courses. I have completed advanced training in various areas of personal protection and high-risk operations, including training as a Private Military Contractor, which allows me to guarantee a security service adaptable to any context, both civil and in high-risk areas.",
-    text_training1:"My training includes:",
+    text_training:"Our operators come from a high level professional training, acquired through qualified and internationally recognized courses, in various areas of personal protection and high-risk operations, including training as Private Military Contractor, which allows us to guarantee a security service adaptable to any context, both civil and in high-risk areas.",
+    text_training1:"Our training includes:",
     text_training2t:"CLOSE PROTECTION OFFICER COURSE",
     text_training2:"A program that covers all the fundamental areas of personal protection, from operational planning to crisis management.",
     text_training3t:"PRIVATE MILITARY CONTRACTOR (PMC) TRAINING",
@@ -71,7 +71,9 @@ const translations = {
     text_training6:"Training aimed at providing skills to manage medical emergencies in the field, maintaining control in high-stress situations.",
     text_training7t:"THREAT ASSESSMENT AND RISK ANALYSIS",
     text_training7:"Advanced training to identify potential risks and plan effective protection strategies, customized for each situation and operating environment.",
-    text_training8:"Thanks to this training and continuous professional development, I can operate according to the highest safety standards and provide customized and discreet protection solutions for each client, both in private contexts and in high-risk areas."
+    text_training8:"Thanks to this training and continuous professional development, I can operate according to the highest safety standards and provide customized and discreet protection solutions for each client, both in private contexts and in high-risk areas.",
+
+    compilaform:"Would you like to join our team? Fill out the form and we will contact you as soon as possible!"
     
 
     
@@ -80,7 +82,7 @@ const translations = {
     goservice: "SCOPRI DI PIU",
     citazione:"\"Operiamo con professionalità e discrezione in tutto il territorio italiano, offrendo servizi di Close Protection altamente qualificati. Grazie alla nostra esperienza internazionale, siamo disponibili per incarichi anche in Europa e nel Mondo, garantendo sempre il massimo livello di sicurezza ovunque ci venga richiesto.\"",
 
-    textcloseprotection:"Offriamo servizi di protezione ravvicinata personalizzati, progettati per garantire la sicurezza e la tranquillità dei nostri clienti in ogni situazione. Il nostro team, composto da professionisti altamente qualificati e discreti, fornisce protezione a personalità di spicco, VIP, dirigenti e individui con necessità di sicurezza elevata, sia in ambito privato che durante eventi pubblici.",
+    textcloseprotection:"Offriamo servizi di transfer sicuri e affidabili, con driver altamente qualificati. Puntiamo a garantire sicurezza e privacy ai nostri clienti. Il nostro team, composto da professionisti, fornisce protezione a personaggi del mondo dello spettacolo, dirigenti e persone con necessità di sicurezza elevata, sia in ambito privato che durante eventi pubblici.",
     textcloseprotection1:"I nostri servizi includono:",
     textcloseprotection2t:"ANALISI DEL RISCHIO PERSONALIZZATA",
     textcloseprotection2:"Valutiamo con attenzione le circostanze e i potenziali pericoli per offrire soluzioni su misura.",
@@ -132,8 +134,8 @@ const translations = {
 
 
 
-    text_training:"La mia esperienza nella Close Protection è supportata da una formazione professionale di alto livello, acquisita attraverso corsi qualificati e riconosciuti a livello internazionale. Ho completato addestramenti avanzati in vari ambiti della protezione personale e operazioni ad alto rischio, compreso l'addestramento come Private Military Contractor, che mi permette di garantire un servizio di sicurezza adattabile a qualsiasi contesto, sia civile che in aree a rischio elevato.",
-    text_training1:"Il mio addestramento include:",
+    text_training:"I nostri operatori provengono da una formazione professionale di alto livello, acquisita attraverso corsi qualificati e riconosciuti a livello internazionale, in vari ambiti della protezione personale e operazioni ad alto rischio, compreso l'addestramento come Private Military Contractor, che ci permette di garantire un servizio di sicurezza adattabile a qualsiasi contesto, sia civile che in aree a rischio elevato.",
+    text_training1:"Il nostro addestramento include:",
     text_training2t:"CORSO DI PROTEZIONE RAVVICINATA (CLOSE PROTECTION OFFICER)",
     text_training2:"Un programma che copre tutte le aree fondamentali della protezione personale, dalla pianificazione operativa alla gestione di situazioni di crisi.",
     text_training3t:"ADDESTRAMENTO COME PRIVATE MILITARY CONTRACTOR (PMC)",
@@ -146,7 +148,8 @@ const translations = {
     text_training6:"Formazione mirata a fornire competenze per gestire emergenze mediche sul campo, mantenendo il controllo in situazioni di stress elevato.",
     text_training7t:"VALUTAZIONE DELLE MINACCE E ANALISI DEL RISCHIO",
     text_training7:"Addestramento avanzato per l'identificazione dei rischi potenziali e la pianificazione di strategie di protezione efficaci, personalizzate per ogni situazione e ambiente operativo.",
-    text_training8:"Grazie a questo addestramento e al continuo aggiornamento professionale, posso operare secondo i più alti standard di sicurezza e fornire soluzioni di protezione personalizzate e discrete per ogni cliente, sia in contesti privati che in aree ad alto rischio."
+    text_training8:"Grazie a questo addestramento e al continuo aggiornamento professionale, posso operare secondo i più alti standard di sicurezza e fornire soluzioni di protezione personalizzate e discrete per ogni cliente, sia in contesti privati che in aree ad alto rischio.",
+    compilaform:"Vorresti entrare a far parte del nostro team? Compila il form e ti contatteremo il prima possibile!"
     
   },
 };
@@ -179,6 +182,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('language') || 'en'; // Default in inglese
     changeLanguage(savedLang);
 });
+
+
 
 function changeLanguage(lang) {
     localStorage.setItem('language', lang); // Salva la lingua nel localStorage
